@@ -49,7 +49,7 @@ namespace TIBox.DataAccess.Tests
         [TestMethod]
         public void Update_Customers()
         {
-            var customer = _unitOfWork.Customer.GetEntityById(93);
+            var customer = _unitOfWork.Customer.GetEntityById(104);
             Assert.AreEqual(customer != null, true);
 
             customer.Phone = "988-888-888";

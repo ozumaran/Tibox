@@ -19,7 +19,7 @@ namespace TIBox.DataAccess.Tests
         }
 
         [TestMethod]
-        public void Get_All_Customers()
+        public void Get_All_Orders()
         {
             var result = _unitOfWork.Orders.GetAll();
             Assert.AreEqual(result.Count() > 0, true);
@@ -28,17 +28,17 @@ namespace TIBox.DataAccess.Tests
         [TestMethod]
         public void Order_by_OrderNamber()
         {
-            var order = _unitOfWork.Orders.SearchByOrderNumber(542378);
+            var order = _unitOfWork.Orders.SearchByOrderNumber(542397);
             Assert.AreEqual(order != null, true);
 
-            Assert.AreEqual(order.Id, 1);
-            Assert.AreEqual(order.CustomerId, 85);            
+            Assert.AreEqual(order.Id, 20);
+            Assert.AreEqual(order.CustomerId, 25);            
         }
 
         [TestMethod]
         public void Order_With_Items()
         {
-            var order = _unitOfWork.Orders.OrderWithOrderItems(542378);
+            var order = _unitOfWork.Orders.OrderWithOrderItems(542397);
             Assert.AreEqual(order != null, true);
 
             Assert.AreEqual(order.Items.Any(), true);
