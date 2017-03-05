@@ -5,7 +5,37 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.Models", "Models\Tibox.Models.csproj", "{76D2C39B-04A7-4297-8978-1D8ECBD8CA67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.Repository", "Tibox.Repository\Tibox.Repository.csproj", "{C54E6936-D8DE-416C-80DA-D910FBB4C4D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.Repository", "Tibox.Repository\Tibox.Repository.csproj", "{8DFA76CA-CEDB-40F3-9271-13DC088582A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Test", "Unit Test", "{F0711EA6-35E9-4448-BF1B-FECFD0CDED3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.DataAccess.Tests", "Tibox.Repository.Tests\Tibox.DataAccess.Tests.csproj", "{48263B14-C84E-4440-BBC7-E15F8E84F176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.UnitOfWork", "Tibox.UnitOfWork\Tibox.UnitOfWork.csproj", "{1AB57AC2-31CF-4E09-930A-57C3669BC4EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aprendizaje", "Aprendizaje", "{6195DFBC-5E24-4A90-8918-6DCB829EFB91}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TIbox.Html5", "TIbox.Html5\", "{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_44422"
+		Debug.AspNetCompiler.PhysicalPath = "TIbox.Html5\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_44422\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_44422"
+		Release.AspNetCompiler.PhysicalPath = "TIbox.Html5\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_44422\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "44422"
+		SlnRelativePath = "TIbox.Html5\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +47,28 @@ Global
 		{76D2C39B-04A7-4297-8978-1D8ECBD8CA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76D2C39B-04A7-4297-8978-1D8ECBD8CA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76D2C39B-04A7-4297-8978-1D8ECBD8CA67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C54E6936-D8DE-416C-80DA-D910FBB4C4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C54E6936-D8DE-416C-80DA-D910FBB4C4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C54E6936-D8DE-416C-80DA-D910FBB4C4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C54E6936-D8DE-416C-80DA-D910FBB4C4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DFA76CA-CEDB-40F3-9271-13DC088582A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DFA76CA-CEDB-40F3-9271-13DC088582A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DFA76CA-CEDB-40F3-9271-13DC088582A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DFA76CA-CEDB-40F3-9271-13DC088582A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48263B14-C84E-4440-BBC7-E15F8E84F176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48263B14-C84E-4440-BBC7-E15F8E84F176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48263B14-C84E-4440-BBC7-E15F8E84F176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48263B14-C84E-4440-BBC7-E15F8E84F176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB57AC2-31CF-4E09-930A-57C3669BC4EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB57AC2-31CF-4E09-930A-57C3669BC4EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB57AC2-31CF-4E09-930A-57C3669BC4EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB57AC2-31CF-4E09-930A-57C3669BC4EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48263B14-C84E-4440-BBC7-E15F8E84F176} = {F0711EA6-35E9-4448-BF1B-FECFD0CDED3C}
+		{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329} = {6195DFBC-5E24-4A90-8918-6DCB829EFB91}
 	EndGlobalSection
 EndGlobal

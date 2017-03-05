@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("Tibox.Repository")]
+[assembly: AssemblyTitle("Tibox.UnitOfWork")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Tibox.Repository")]
+[assembly: AssemblyProduct("Tibox.UnitOfWork")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("8dfa76ca-cedb-40f3-9271-13dc088582a4")]
+[assembly: Guid("1ab57ac2-31cf-4e09-930a-57c3669bc4ec")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
