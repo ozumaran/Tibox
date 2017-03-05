@@ -10,5 +10,6 @@ namespace TIBox.Repositorio.Northwind
     public interface ICustomerRepository: IRepositorio<Customer>
     {
         Customer SearchByName(string firstName, string lastName);
+        Customer CustomerWithOrders(int id);
     }
 }
