@@ -13,6 +13,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TIBox.DataAccess.Tests", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TIBox.UnitOfWork", "TIBox.UnitOfWork\TIBox.UnitOfWork.csproj", "{3B4C79FF-7397-4311-B3A5-5A6350DCFFCC}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Tibox.Html5(1)", "Tibox.Html5\", "{F29F8A74-9A61-478F-BD2B-1F6D886939D4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49573"
+		Debug.AspNetCompiler.PhysicalPath = "Tibox.Html5\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49573\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49573"
+		Release.AspNetCompiler.PhysicalPath = "Tibox.Html5\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49573\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49573"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +55,10 @@ Global
 		{3B4C79FF-7397-4311-B3A5-5A6350DCFFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B4C79FF-7397-4311-B3A5-5A6350DCFFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B4C79FF-7397-4311-B3A5-5A6350DCFFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F29F8A74-9A61-478F-BD2B-1F6D886939D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29F8A74-9A61-478F-BD2B-1F6D886939D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29F8A74-9A61-478F-BD2B-1F6D886939D4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29F8A74-9A61-478F-BD2B-1F6D886939D4}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
