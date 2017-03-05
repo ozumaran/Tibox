@@ -76,5 +76,25 @@ namespace TIBox.DataAccess.Tests
 
             Assert.AreEqual(customer.Orders.Any(), true);
         }
+
+
+        [TestMethod]
+        public void Order_by_OrderNamber()
+        {
+            var order = _unitOfWork.Orders.SearchByOrderNumber(542378);
+            Assert.AreEqual(order != null, true);
+
+            Assert.AreEqual(order.Id, 1);
+            Assert.AreEqual(order.CustomerId, 85);
+        }
+
+        [TestMethod]
+        public void Order_With_Items()
+        {
+            var order = _unitOfWork.Orders.OrderWithOrderItems(542378);
+            Assert.AreEqual(order != null, true);
+
+            Assert.AreEqual(order.Items.Any(), true);
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace TIBox.Repositorio.Northwind
             using (var connection = new SqlConnection(_conecctionString))
             {
                 var parameters = new DynamicParameters();
-                parameters.Add("customerId", id);
+                parameters.Add("@customerId", id);
                     using (var multiple = 
                             connection.QueryMultiple("[dbo].[CustomerWithOrders]", 
                             parameters, 
