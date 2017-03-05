@@ -51,6 +51,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CustomerRepositorioTest.cs" />
+    <Compile Include="OrderRepositorioTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +62,10 @@
     <ProjectReference Include="..\TIBox.Repositorio\TIBox.Repositorio.csproj">
       <Project>{bc3f7950-698b-4019-9cbb-ae950e0c3c38}</Project>
       <Name>TIBox.Repositorio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TIBox.UnitOfWork\TIBox.UnitOfWork.csproj">
+      <Project>{3b4c79ff-7397-4311-b3a5-5a6350dcffcc}</Project>
+      <Name>TIBox.UnitOfWork</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Test", "Unit Test", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TIBox.DataAccess.Tests", "TIBox.Repositorio.Tests\TIBox.DataAccess.Tests.csproj", "{E02B8CB5-0B7F-476D-A510-42176DC76CD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TIBox.UnitOfWork", "TIBox.UnitOfWork\TIBox.UnitOfWork.csproj", "{3B4C79FF-7397-4311-B3A5-5A6350DCFFCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{E02B8CB5-0B7F-476D-A510-42176DC76CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E02B8CB5-0B7F-476D-A510-42176DC76CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E02B8CB5-0B7F-476D-A510-42176DC76CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4C79FF-7397-4311-B3A5-5A6350DCFFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4C79FF-7397-4311-B3A5-5A6350DCFFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4C79FF-7397-4311-B3A5-5A6350DCFFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4C79FF-7397-4311-B3A5-5A6350DCFFCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

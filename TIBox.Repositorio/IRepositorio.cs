@@ -7,13 +7,13 @@ using Tibox.Models;
 
 namespace TIBox.Repositorio
 {
-    public interface IRepositorio
+    public interface IRepositorio<T> where T: class
     {
-        int InsertCustomer(Customer customer);
-        bool UpdateCustomer(Customer customer);
-        bool DeleteCustomer(Customer customer);
-        Customer GetCustomerById(int id);
+        int Insert(T entity);
+        bool Update(T entity);
+        bool Delete(T entity);
+        T GetEntityById(int id);
         //List<Customer> GetAllCustomer();
-        IEnumerable<Customer> GetAllCustomer();
+        IEnumerable<T> GetAll();
     }
 }
