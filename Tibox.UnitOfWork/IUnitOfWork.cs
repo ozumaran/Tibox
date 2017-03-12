@@ -4,18 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Tibox.Models;
-using Tibox.Repository;
-using Tibox.Repository.Northwind_Lite;
+using Tibox.Repositorio;
+using Tibox.Repositorio.Northwind;
 
 namespace Tibox.UnitOfWork
 {
     public interface IUnitOfWork
     {
-        ICustomerRepository Customers { get; }
-        IOrderRepository Orders { get; }
-        IRepository<OrderItem> OrderItems { get; }
-        IRepository<Product> Products { get; }
-        IRepository<Supplier> Suppliers { get; }
+
+        ICustomerRepositorio Customers { get; }
+        IOrderRepositorio Orders { get; }
+        IRepositorio<OrderItem> OrderItems { get; }
+        IRepositorio<Product> Products { get; }
+        IRepositorio<Supplier> Suppliers { get; }
 
     }
 }

@@ -7,25 +7,22 @@
     $bp-xxl: "(min-width: 1900px)";
 
     @if($breakpoint == xs){
-        @media #{$bp-xs} {@content; 
-                          background-color: $background-color-xs}
+        @media #{$bp-xs}{ @content; }
     }
-    @else if ($breakpoint == sm){
-        @media #{$bp-sm} {@content;}
+    @else if($breakpoint == sm){
+        @media #{$bp-sm}{ @content; }
     }
-    @else if ($breakpoint == md){
-        @media #{$bp-md} {@content;}
+    @else if($breakpoint == md){
+        @media #{$bp-md}{ @content; }
     }
-    @else if ($breakpoint == lg){
-        @media #{$bp-lg} {@content;}
+    @else if($breakpoint == lg){
+        @media #{$bp-lg}{ @content; }
     }
-    @else if ($breakpoint == xl){
-        @media #{$bp-xl} {@content;}
+    @else if($breakpoint == xl){
+        @media #{$bp-xl}{ @content; }
     }
-    @else if ($breakpoint == xxl){
-        @media #{$bp-xxl} {@content;}
+    @else if($breakpoint == xxl){
+        @media #{$bp-xxl}{ @content; }
     }
-
-
 
 }

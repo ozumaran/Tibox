@@ -5,36 +5,36 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.Models", "Models\Tibox.Models.csproj", "{76D2C39B-04A7-4297-8978-1D8ECBD8CA67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.Repository", "Tibox.Repository\Tibox.Repository.csproj", "{8DFA76CA-CEDB-40F3-9271-13DC088582A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.Repositorio", "Tibox.Repositorio\Tibox.Repositorio.csproj", "{4B31BFAC-9D12-4882-AE75-E11F31E711D0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Test", "Unit Test", "{F0711EA6-35E9-4448-BF1B-FECFD0CDED3C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Test", "Unit Test", "{35C561F3-558A-4D42-9B73-67594BAD26A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.DataAccess.Tests", "Tibox.Repository.Tests\Tibox.DataAccess.Tests.csproj", "{48263B14-C84E-4440-BBC7-E15F8E84F176}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.Repositorio.Tests", "Tibox.Repositorio.Tests\Tibox.Repositorio.Tests.csproj", "{A7B1116D-F935-4E7B-A1C7-BC4868716FC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.UnitOfWork", "Tibox.UnitOfWork\Tibox.UnitOfWork.csproj", "{1AB57AC2-31CF-4E09-930A-57C3669BC4EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibox.UnitOfWork", "Tibox.UnitOfWork\Tibox.UnitOfWork.csproj", "{A3FEC60D-D6FA-4572-9BC9-5CD32C377AFF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aprendizaje", "Aprendizaje", "{6195DFBC-5E24-4A90-8918-6DCB829EFB91}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aprendizaje", "Aprendizaje", "{9CE24722-49BC-4B59-97AD-B2858240C868}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TIbox.Html5", "TIbox.Html5\", "{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Tibox.Html5", "Tibox.Html5\", "{40953059-8609-4A85-B4D2-5A83D074816F}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_44422"
-		Debug.AspNetCompiler.PhysicalPath = "TIbox.Html5\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_44422\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_6671"
+		Debug.AspNetCompiler.PhysicalPath = "Tibox.Html5\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_6671\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_44422"
-		Release.AspNetCompiler.PhysicalPath = "TIbox.Html5\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_44422\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_6671"
+		Release.AspNetCompiler.PhysicalPath = "Tibox.Html5\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_6671\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "44422"
-		SlnRelativePath = "TIbox.Html5\"
-		DefaultWebSiteLanguage = "Visual C#"
+		VWDPort = "6671"
+		SlnRelativePath = "Tibox.Html5\"
+		DefaultWebSiteLanguage = "Visual Basic"
 	EndProjectSection
 EndProject
 Global
@@ -47,28 +47,28 @@ Global
 		{76D2C39B-04A7-4297-8978-1D8ECBD8CA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76D2C39B-04A7-4297-8978-1D8ECBD8CA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76D2C39B-04A7-4297-8978-1D8ECBD8CA67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8DFA76CA-CEDB-40F3-9271-13DC088582A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DFA76CA-CEDB-40F3-9271-13DC088582A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DFA76CA-CEDB-40F3-9271-13DC088582A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DFA76CA-CEDB-40F3-9271-13DC088582A4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{48263B14-C84E-4440-BBC7-E15F8E84F176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48263B14-C84E-4440-BBC7-E15F8E84F176}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48263B14-C84E-4440-BBC7-E15F8E84F176}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48263B14-C84E-4440-BBC7-E15F8E84F176}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1AB57AC2-31CF-4E09-930A-57C3669BC4EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1AB57AC2-31CF-4E09-930A-57C3669BC4EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1AB57AC2-31CF-4E09-930A-57C3669BC4EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1AB57AC2-31CF-4E09-930A-57C3669BC4EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4B31BFAC-9D12-4882-AE75-E11F31E711D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B31BFAC-9D12-4882-AE75-E11F31E711D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B31BFAC-9D12-4882-AE75-E11F31E711D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B31BFAC-9D12-4882-AE75-E11F31E711D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B1116D-F935-4E7B-A1C7-BC4868716FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B1116D-F935-4E7B-A1C7-BC4868716FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B1116D-F935-4E7B-A1C7-BC4868716FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B1116D-F935-4E7B-A1C7-BC4868716FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FEC60D-D6FA-4572-9BC9-5CD32C377AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FEC60D-D6FA-4572-9BC9-5CD32C377AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FEC60D-D6FA-4572-9BC9-5CD32C377AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FEC60D-D6FA-4572-9BC9-5CD32C377AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40953059-8609-4A85-B4D2-5A83D074816F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40953059-8609-4A85-B4D2-5A83D074816F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40953059-8609-4A85-B4D2-5A83D074816F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{40953059-8609-4A85-B4D2-5A83D074816F}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{48263B14-C84E-4440-BBC7-E15F8E84F176} = {F0711EA6-35E9-4448-BF1B-FECFD0CDED3C}
-		{FDD52CA4-92B9-43C0-87C2-4BA0BC6BE329} = {6195DFBC-5E24-4A90-8918-6DCB829EFB91}
+		{A7B1116D-F935-4E7B-A1C7-BC4868716FC6} = {35C561F3-558A-4D42-9B73-67594BAD26A2}
+		{40953059-8609-4A85-B4D2-5A83D074816F} = {9CE24722-49BC-4B59-97AD-B2858240C868}
 	EndGlobalSection
 EndGlobal

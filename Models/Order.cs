@@ -1,6 +1,7 @@
+
 using Dapper.Contrib.Extensions;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 
 namespace Tibox.Models
 {
@@ -12,6 +13,7 @@ namespace Tibox.Models
         public string OrderNumber { get; set; }
         public int CustomerId { get; set; }
         public decimal? TotalAmount { get; set; }
+        [Computed]           
         public IEnumerable<OrderItem> OrderItems { get; set; }
     }
 }
