@@ -7,8 +7,8 @@
     <ProjectGuid>{BC3F7950-698B-4019-9CBB-AE950E0C3C38}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TIBox.Repositorio</RootNamespace>
-    <AssemblyName>TIBox.Repositorio</AssemblyName>
+    <RootNamespace>Tibox.Repositorio</RootNamespace>
+    <AssemblyName>Tibox.Repositorio</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -52,10 +52,10 @@
   <ItemGroup>
     <Compile Include="BaseRepositorio.cs" />
     <Compile Include="IRepositorio.cs" />
-    <Compile Include="Northwind\CustomerRepository.cs" />
-    <Compile Include="Northwind\ICustomerRepository.cs" />
-    <Compile Include="Northwind\IOrderRepository.cs" />
-    <Compile Include="Northwind\OrderRepository.cs" />
+    <Compile Include="Northwind\CustomerRepositorio.cs" />
+    <Compile Include="Northwind\ICustomerRepositorio.cs" />
+    <Compile Include="Northwind\IOrderRepositorio.cs" />
+    <Compile Include="Northwind\OrderRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

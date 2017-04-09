@@ -11,6 +11,14 @@ namespace TIBox.Repositorio.Northwind
 {
     public class CustomerRepository : BaseRepositorio<Customer>, ICustomerRepository
     {
+        public int Count()
+        {
+            using (var connection = new SqlConnection(_conecctionString))
+            {
+                return connection.ExecuteScalar<int>("SELECT COUNT(Id) FROM dbo.Customer");
+            }
+        }
+
         public Customer CustomerWithOrders(int id)
         {
             using (var connection = new SqlConnection(_conecctionString))
@@ -30,6 +38,21 @@ namespace TIBox.Repositorio.Northwind
             }
         }
 
+        public IEnumerable<Customer> PageList(int startRow, int endRow)
+        {
+            using (var connection = new SqlConnection(_conecctionString))
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("@startRow", startRow);
+                parameters.Add("@endRow", endRow);
+
+                return connection
+                    .Query<Customer>("[dbo].[CustomerPagedList]",
+                    parameters,
+                    commandType: System.Data.CommandType.StoredProcedure);
+            }
+        }
+
         public Customer SearchByName(string firstName, string lastName)
         {
             using (var connection = new SqlConnection(_conecctionString))
@@ -44,5 +67,6 @@ namespace TIBox.Repositorio.Northwind
                     commandType: System.Data.CommandType.StoredProcedure);
             }
         }
+
     }
 }

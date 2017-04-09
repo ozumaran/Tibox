@@ -11,5 +11,8 @@ namespace TIBox.Repositorio.Northwind
     {
         Customer SearchByName(string firstName, string lastName);
         Customer CustomerWithOrders(int id);
+
+        IEnumerable<Customer> PageList(int startRow, int endRow);
+        int Count();
     }
 }

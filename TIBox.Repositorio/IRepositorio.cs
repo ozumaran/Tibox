@@ -5,15 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Tibox.Models;
 
-namespace TIBox.Repositorio
+namespace Tibox.Repositorio
 {
     public interface IRepositorio<T> where T: class
     {
-        int Insert(T entity);
-        bool Update(T entity);
-        bool Delete(T entity);
+
+        int Insert(T Entity);
+        bool Update(T Entity);
+        bool Delete(T Entity);
         T GetEntityById(int id);
-        //List<Customer> GetAllCustomer();
-        IEnumerable<T> GetAll();
+        IEnumerable<T> GetAllEntitys();
+
     }
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{3B4C79FF-7397-4311-B3A5-5A6350DCFFCC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TIBox.UnitOfWork</RootNamespace>
-    <AssemblyName>TIBox.UnitOfWork</AssemblyName>
+    <RootNamespace>Tibox.UnitOfWork</RootNamespace>
+    <AssemblyName>Tibox.UnitOfWork</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,16 +42,16 @@
   <ItemGroup>
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TIBoxUnitOfWork.cs" />
+    <Compile Include="TiboxUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Models\Tibox.Models.csproj">
-      <Project>{76d2c39b-04a7-4297-8978-1d8ecbd8ca67}</Project>
+      <Project>{76D2C39B-04A7-4297-8978-1D8ECBD8CA67}</Project>
       <Name>Tibox.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TIBox.Repositorio\TIBox.Repositorio.csproj">
-      <Project>{bc3f7950-698b-4019-9cbb-ae950e0c3c38}</Project>
-      <Name>TIBox.Repositorio</Name>
+    <ProjectReference Include="..\Tibox.Repositorio\Tibox.Repositorio.csproj">
+      <Project>{4B31BFAC-9D12-4882-AE75-E11F31E711D0}</Project>
+      <Name>Tibox.Repositorio</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

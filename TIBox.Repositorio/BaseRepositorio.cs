@@ -3,55 +3,55 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 
-namespace TIBox.Repositorio
+namespace Tibox.Repositorio
 {
-    public class BaseRepositorio<T> : IRepositorio<T> where T : class
+   public class BaseRepositorio<T> : IRepositorio<T> where T : class
     {
-        protected readonly string _conecctionString;
+        protected readonly string _cCadenaConexion; //El protected permite que se use desde la clase que herede
 
         public BaseRepositorio()
         {
-            _conecctionString = ConfigurationManager
-               .ConnectionStrings["NorthwindConnectionString"]
-               .ConnectionString;
+            _cCadenaConexion = ConfigurationManager.ConnectionStrings["NorthwindConnectionString"].ConnectionString;
         }
-        public bool Delete(T entity)
+
+        public bool Delete(T Entity)
         {
-            using (var connection = new SqlConnection(_conecctionString))
+            using (SqlConnection _conn = new SqlConnection(_cCadenaConexion))
             {
-                return connection.Delete(entity);
+                return _conn.Delete(Entity);
             }
         }
 
-        public IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAllEntitys()
         {
-            using (var connection = new SqlConnection(_conecctionString))
+            using (SqlConnection _conn = new SqlConnection(_cCadenaConexion))
             {
-                return connection.GetAll<T>();
+                return _conn.GetAll<T>();
             }
         }
 
         public T GetEntityById(int id)
         {
-            using (var connection = new SqlConnection(_conecctionString))
+            using (SqlConnection _conn = new SqlConnection(_cCadenaConexion))
             {
-                return connection.Get<T>(id);
+                return _conn.Get<T>(id);
             }
         }
 
-        public int Insert(T entity)
+        public int Insert(T Entity)
         {
-            using (var connection = new SqlConnection(_conecctionString))
+            using (SqlConnection _conn = new SqlConnection(_cCadenaConexion))
             {
-                return (int)connection.Insert(entity);
+                return (int)_conn.Insert(Entity);
             }
         }
 
-        public bool Update(T entity)
+        public bool Update(T Entity)
         {
-            using (var connection = new SqlConnection(_conecctionString))
+            using (SqlConnection _conn = new SqlConnection(_cCadenaConexion))
             {
-                return connection.Update(entity);
+                return _conn.Update(Entity);
+
             }
         }
     }
